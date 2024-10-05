@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <h2> Javascript class inheritence</h2>
+        <p> use extends keyword to inherit a class to another class. And uses super keyword to call parent constuctor</p>
+        <p id="details"></p>
+        <script>
+            class car{
+                constructor(brand){
+                    this.carname=brand
+                }
+                present(){
+                    return "I have a " + this.carname 
+                }
+            }
+            class model extends car{
+                constructor(brand,mod){
+                    super(brand)
+                    this.model=mod
+                }
+                show(){
+                    return this.present()+ ",it is "+ this.model
+                }
+            }
+            let mycar=new model("Ford","Mustang")
+            document.getElementById("details").innerHTML=mycar.show()
+        </script>
+    </body>
+</html>
