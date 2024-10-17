@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <h1> Convert Java script object to Json string and vise versa </h1>
+        <p id="result"></p>
+        <script>
+           var myobj={name:"Riya",
+            age:12,
+            grade:7
+             } ;
+             var myJSON=JSON.stringify(myobj)
+             var newobj= JSON.parse(myJSON)
+             document.getElementById("result").innerHTML= newobj.name + " my grade is " + newobj.grade + " my age is " + newobj.age
+        </script>

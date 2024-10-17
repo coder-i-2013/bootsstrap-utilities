@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <h1> java script async  / await</h1>
+        <h2 id="result"> </h2>
+        <script>
+            async function add (a,b){
+            let response= await a+b
+            display(response) 
+            
+            }
+            function display(some){
+                document.getElementById("result").innerHTML= some;
+            }
+            add (5,20)
+        </script>
+    </body>
+</html>
