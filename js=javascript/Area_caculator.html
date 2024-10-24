@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <script>
+            var choice= prompt("Welcome to Area calculator \n Please enter your choice \n1 Area of rectange \n2 Area of triangle \n3 Area of a circle \n4 Area of a parellelogram")
+     if (choice == "1"){
+        var l= prompt(" Enter the length ")
+        var b= prompt(" Enter the breath")
+        var result= Number(l)*Number(b)
+        alert("The area of the rectangle with length "+ l + "breath " + b + "is " + result)
+     }
+     if (choice== "2"){
+        var h= prompt("Enter the height")
+        var b= prompt("Enter the base ")
+        var result= Number(h)*Number(b)/2
+        alert(" the area of the triangle is "+ result)
+     }
+     if (choice== "3"){
+        var r= prompt("enter the radius")
+        var result= 3.14*Number(r)*Number(r)
+        alert(" the area of the circle is "+ result)
+     }
+     if (choice== "4"){
+        var h= prompt("Enter the height")
+        var cb= prompt("Enter the corrosponding bsebase ")
+        var result= Number(h)*Number(cb)
+        alert(" the area of the parelleogram is "+ result)
+     }
+
+       </script>
+    </body>

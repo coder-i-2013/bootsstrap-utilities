@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <p> Enter a number and click OK</p>
+        <input id="id1" type="number" min="100" max="300" required>
+        <button onclick="myfunc()"> OK </button>
+        <p id="result"> </p>
+        <script>
+            function myfunc(){
+                var impobj= document.getElementById("id1")
+                if(!impobj.checkValidity()){
+                document.getElementById("result").innerHTML=impobj.validationMessage
+            }
+            }
+        </script>
+    </body>
+</html>
