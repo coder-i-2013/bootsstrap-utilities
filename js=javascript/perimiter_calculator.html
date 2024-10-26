@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <script>
+            var choice= prompt("Welcome to Perimiter calculator \n Please enter your choice \n1 Perimiter of rectange \n2 Perimiter of triangle \n3 Perimiter of a circle \n4 Perimiter of a parellelogram")
+     
+            if (choice == "1"){
+        var l= prompt(" Enter the length ")
+        var b= prompt(" Enter the breath")
+        var result= Number(l)+Number(b)+Number(l)+Number(b)
+        alert("The perimiter of the rectangle with length "+ l + "breath " + b + "is " + result)
+     }
+     if (choice== "2"){
+        var h= prompt("Enter the height")
+        var l= prompt("Enter the length")
+        var w= prompt("Enter the width")
+        var result= Number(h)+Number(w)+Number(l)
+        alert(" the perimiter of the triangle is "+ result)
+     }
+     if (choice== "3"){
+        var r= prompt("enter the radius")
+        var result= 3.14*2*Number(r)
+        alert(" the perimiter of the circle is "+ result)
+     }
+     if (choice== "4"){
+        var h= prompt("Enter the height")
+        var cb= prompt("Enter the corrosponding bsebase ")
+        var result= Number(h)+Number(h)+Number(cb)+Number(cb)
+        alert(" the perimiter of the parelleogram is "+ result)
+     }
+
+       </script>
+    </body>
+    </html>
