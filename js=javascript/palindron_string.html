@@ -1,0 +1,19 @@
+<html> 
+    <body>
+        <h1> Js Palinmdome checking function</h1>
+        <script>
+        function palindrome(mystring){
+            var input= mystring.replace(/[^A-Z 0-9]/ig,"").toLowerCase()
+            var reversed_input= input.split("").reverse().join("")
+            if(input===reversed_input){
+                document.write("<div>"+ mystring+" is a palindrome</div>")
+            }
+            else{
+             document.write("<div>"+ mystring +" is not a palindrome</div>")   
+            }
+            }
+            var mystring= prompt("Enter a string!")
+            palindrome(mystring)
+        </script>
+    </body>
+</html>
