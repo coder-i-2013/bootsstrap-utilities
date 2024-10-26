@@ -1,0 +1,6 @@
+     if (choice== "2"){
+        var h= prompt("Enter the height")
+        var b= prompt("Enter the base ")
+        var result= Number(h)*Number(b)/2
+        alert(" the area of the triangle is "+ result)
+     }
